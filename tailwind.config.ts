@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         night: '#121212',
+        wisteria: '#A39DD9',
+        'wisteria-dark': '#6C62C2',
+        'wisteria-light': '#BDB8E3',
       },
     },
   },
