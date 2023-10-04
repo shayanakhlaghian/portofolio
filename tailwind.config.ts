@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-open-sans)'],
+        poiret: ['var(--font-poiret-one)'],
+      },
       colors: {
         night: '#121212',
         wisteria: '#A39DD9',
