@@ -3,6 +3,8 @@ import type { Variants, Transition } from 'framer-motion';
 import { motion } from 'framer-motion';
 
 import About from './About';
+import PrimaryHeading from './PrimaryHeading';
+import SecondaryHeading from './SecondaryHeading';
 
 const variants: Variants = {
   hide: { opacity: 0 },
@@ -14,7 +16,7 @@ const variants: Variants = {
   },
 };
 
-const transition: Transition = { duration: 1 };
+const transition: Transition = { duration: 1.5 };
 
 const Hero = () => {
   return (
@@ -24,22 +26,12 @@ const Hero = () => {
       initial='hide'
       animate='show'
     >
-      <motion.h1
-        className='text-2xl md:text-4xl lg:text-7xl tracking-wide mb-1 md:mb-2 font-light'
-        variants={variants}
-        transition={transition}
-      >
-        Shayan Akhlaghian
-      </motion.h1>
-      <motion.h2
-        className='text-sm md:text-2xl font-bold [&>*]:mr-2 last:mr-0'
-        variants={variants}
-        transition={transition}
-      >
-        Web Developer | Designer
-      </motion.h2>
+      <motion.div variants={variants} transition={transition}>
+        <PrimaryHeading>Mohammad Reza Akhlaghian</PrimaryHeading>
+        <SecondaryHeading>Web Developer | Designer</SecondaryHeading>
+      </motion.div>
       <motion.div
-        className='absolute w-full top-[40%] md:w-1/2 md:left-1/2 lg:w-1/3 lg:left-[60%]'
+        className='absolute w-full top-[30%] md:w-1/2 md:left-1/2 lg:w-1/3 lg:left-[60%] lg:top-[40%]'
         variants={variants}
         transition={transition}
       >
