@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={`${lato.className} bg-night text-white h-[90vh] md:h-[92.5vh]`}
       >
-        <div className='border-2 border-white m-6 h-full p-4 rounded-sm'>
+        <div className='border-2 border-white m-6 h-full p-4 rounded-sm overflow-hidden'>
           {children}
         </div>
       </body>
