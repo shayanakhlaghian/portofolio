@@ -19,8 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${lato.className} bg-night text-white`}>
-        {children}
+      <body
+        className={`${lato.className} bg-night text-white h-[90vh] md:h-[92.5vh]`}
+      >
+        <div className='border-2 border-white m-6 h-full p-4'>{children}</div>
       </body>
     </html>
   );
