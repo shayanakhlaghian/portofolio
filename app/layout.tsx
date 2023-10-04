@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Poiret_One, Open_Sans } from 'next/font/google';
 
+import Menu from './components/Menu';
+
 const poiretOne = Poiret_One({
   subsets: ['latin'],
   weight: ['400'],
@@ -27,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${openSans.variable} ${poiretOne.variable}`}>
       <body className='bg-night text-white h-[90vh] md:h-[92.5vh]'>
+        <Menu />
         <div className='border-2 border-white m-6 h-full p-4 rounded-sm overflow-hidden'>
           {children}
         </div>
