@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main className='min-h-screen'>
+    <main className=''>
       <h1>My Portofolio</h1>
     </main>
   );
