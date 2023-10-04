@@ -18,6 +18,28 @@ const config: Config = {
         'wisteria-dark': '#6C62C2',
         'wisteria-light': '#BDB8E3',
       },
+      keyframes: {
+        rotate: {
+          '0%': {
+            transform: 'translateX(-50%) rotate3d(0, 0, 1, 0deg)',
+          },
+          '25%': {
+            transform: 'translateX(-50%) rotate3d(0, 0, 1, 90deg)',
+          },
+          '50%': {
+            transform: 'translateX(-50%) rotate3d(0, 0, 1, 180deg)',
+          },
+          '75%': {
+            transform: 'translateX(-50%) rotate3d(0, 0, 1, 270deg)',
+          },
+          '100%': {
+            transform: 'translateX(-50%) rotate3d(0, 0, 1, 360deg)',
+          },
+        },
+      },
+      animation: {
+        rotate: 'rotate 20s infinite',
+      },
     },
   },
   plugins: [],
