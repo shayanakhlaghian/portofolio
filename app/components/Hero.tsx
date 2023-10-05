@@ -31,7 +31,7 @@ const Hero = () => {
         <SecondaryHeading>Web Developer | Designer</SecondaryHeading>
       </motion.div>
       <motion.div
-        className='absolute w-full top-[30%] md:w-1/2 md:left-1/2 lg:w-1/3 lg:left-[60%] lg:top-[40%]'
+        className='absolute w-full top-[30%] md:w-1/2 md:left-1/2 lg:w-1/3 lg:left-[57.5%] lg:top-[40%]'
         variants={variants}
         transition={transition}
       >
