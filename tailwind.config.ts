@@ -14,9 +14,12 @@ const config: Config = {
       },
       colors: {
         primary: '#121212',
-        secondary: '#A39DD9',
+        secondary: '#A39DD9', // Wisteria
         'secondary-dark': '#6C62C2',
         'secondary-light': '#BDB8E3',
+        tertiary: '#D2D89C', // Vanilla
+        'tertiary-dark': '#A1AB44',
+        'tertiary-light': '#E2E6C0',
       },
       keyframes: {
         rotate: {
