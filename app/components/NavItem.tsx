@@ -20,7 +20,7 @@ const NavItem = ({
     <motion.li
       variants={variants}
       transition={transition}
-      className='mb-6 md:mb-8 lg:mb-10 group bg-transparent py-2 px-4 rounded-full group hover:bg-white text-center'
+      className='mb-6 md:mb-8 lg:mb-10 group bg-transparent py-[.2rem] md:py-2 px-4 rounded-full group hover:bg-white text-center'
     >
       <button
         className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold group-hover:text-secondary-dark'

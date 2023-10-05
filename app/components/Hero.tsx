@@ -41,7 +41,7 @@ const Hero = () => {
         </PrimaryButton>
       </motion.div>
       <motion.div
-        className='absolute w-full top-[40%] md:w-1/2 md:left-1/2 lg:w-1/3 lg:left-[57.5%] lg:top-[50%]'
+        className='absolute w-full top-[47.5%] md:w-1/2 md:left-1/2 lg:w-1/3 lg:left-[57.5%] lg:top-[50%]'
         variants={variants}
         transition={transition}
       >

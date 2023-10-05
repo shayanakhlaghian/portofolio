@@ -33,9 +33,9 @@ export default function RootLayout({
       <head>
         <link rel='shortcut icon' href='/logo.svg' />
       </head>
-      <body className='bg-primary text-white h-[90vh] md:h-[92.5vh]'>
+      <body className='bg-primary text-white'>
         <Menu />
-        <div className='border-2 border-white m-6 h-full p-4 rounded-sm overflow-hidden relative'>
+        <div className='border-2 border-white m-6 p-4 rounded-sm overflow-hidden relative h-[87.5vh] md:h-[92.5vh]'>
           <Providers>{children}</Providers>
           <Logo />
         </div>

@@ -14,7 +14,7 @@ const variants: Variants = {
     },
   },
   open: {
-    y: 0,
+    y: '-12.5%',
     transition: {
       type: 'tween',
       when: 'beforeChildren',
@@ -39,7 +39,7 @@ const Nav = ({
 }) => {
   return (
     <motion.nav
-      className='fixed bg-gradient-to-br from-secondary to-secondary-dark w-screen h-screen z-50'
+      className='fixed bg-gradient-to-br from-secondary to-secondary-dark w-screen h-[125%] z-50'
       variants={variants}
       initial='close'
       animate='open'
