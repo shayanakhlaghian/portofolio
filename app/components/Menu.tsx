@@ -1,6 +1,6 @@
 'use client';
-
 import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 import Toggle from './Toggle';
 import Nav from './Nav';
@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <>
       <Toggle isOpen={isOpen} onClick={handleToggle} />
-      <Nav isOpen={isOpen} />
+      <AnimatePresence>{isOpen && <Nav />}</AnimatePresence>
     </>
   );
 };
