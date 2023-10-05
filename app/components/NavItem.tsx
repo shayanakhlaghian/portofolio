@@ -11,10 +11,10 @@ const transition: Transition = { duration: 0.3 };
 
 const NavItem = ({
   children,
-  href,
+  onClick,
 }: {
   children: React.ReactNode;
-  href: string;
+  onClick?: () => void;
 }) => {
   return (
     <motion.li
@@ -22,12 +22,12 @@ const NavItem = ({
       transition={transition}
       className='mb-6 md:mb-8 lg:mb-10 group bg-transparent py-2 px-4 rounded-full group hover:bg-white text-center'
     >
-      <Link
-        href={href}
+      <button
         className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold group-hover:text-secondary-dark'
+        onClick={onClick}
       >
         {children}
-      </Link>
+      </button>
     </motion.li>
   );
 };

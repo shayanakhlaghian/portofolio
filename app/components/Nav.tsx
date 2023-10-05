@@ -24,25 +24,19 @@ const variants: Variants = {
   },
 };
 
-const Nav = () => {
-  const items: { id: string; text: string; href: string }[] = [
-    {
-      id: 'i1',
-      text: 'Home',
-      href: '/',
-    },
-    {
-      id: 'i2',
-      text: "Skills 'n Stacks",
-      href: '/stacks',
-    },
-    {
-      id: 'i3',
-      text: 'Contact',
-      href: '/contact',
-    },
-  ];
+interface Item {
+  id: string;
+  text: string;
+  href: string;
+}
 
+const Nav = ({
+  items,
+  onItemClicked,
+}: {
+  items: Item[];
+  onItemClicked: (href: string) => void;
+}) => {
   return (
     <motion.nav
       className='fixed bg-gradient-to-br from-secondary to-secondary-dark w-screen h-screen z-50'
@@ -53,7 +47,7 @@ const Nav = () => {
     >
       <ul className='absolute top-1/3 left-1/2 translate-x-[-50%]'>
         {items.map(({ id, text, href }) => (
-          <NavItem key={id} href={href}>
+          <NavItem key={id} onClick={() => onItemClicked(href)}>
             {text}
           </NavItem>
         ))}
