@@ -5,12 +5,9 @@ const About = () => {
         About me
       </h3>
       <p className='text-sm md:text-base lg:text-xl'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        beatae suscipit cupiditate, nobis ipsa nam. Voluptatem rerum asperiores
-        nemo nobis? Odit eligendi voluptate blanditiis quod ipsam. Sint aliquid
-        doloremque atque, porro beatae obcaecati qui necessitatibus eveniet
-        inventore, a fuga quam delectus molestias enim magni aut dolor, officia
-        pariatur modi ipsum.
+        {`“I have been doing web development for over 4 years now, I'm also a
+        fluent English speaker who is eager to take challenging programming
+        projects to implement the expertise I've learned through these years.”`}
       </p>
     </>
   );
