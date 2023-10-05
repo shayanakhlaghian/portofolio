@@ -21,24 +21,15 @@ const config: Config = {
       keyframes: {
         rotate: {
           '0%': {
-            transform: 'translateX(-50%) rotate3d(0, 0, 1, 0deg)',
-          },
-          '25%': {
-            transform: 'translateX(-50%) rotate3d(0, 0, 1, 90deg)',
-          },
-          '50%': {
-            transform: 'translateX(-50%) rotate3d(0, 0, 1, 180deg)',
-          },
-          '75%': {
-            transform: 'translateX(-50%) rotate3d(0, 0, 1, 270deg)',
+            transform: 'translateX(-50%) rotate(0)',
           },
           '100%': {
-            transform: 'translateX(-50%) rotate3d(0, 0, 1, 360deg)',
+            transform: 'translateX(-50%) rotate(360deg)',
           },
         },
       },
       animation: {
-        rotate: 'rotate 20s infinite',
+        rotate: 'rotate 30s infinite',
       },
     },
   },
