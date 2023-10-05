@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Poiret_One, Open_Sans } from 'next/font/google';
 
+import Providers from './providers';
 import Menu from './components/Menu';
 import Logo from './components/Logo';
 
@@ -32,7 +33,7 @@ export default function RootLayout({
       <body className='bg-primary text-white h-[90vh] md:h-[92.5vh]'>
         <Menu />
         <div className='border-2 border-white m-6 h-full p-4 rounded-sm overflow-hidden relative'>
-          {children}
+          <Providers>{children}</Providers>
           <Logo />
         </div>
       </body>
