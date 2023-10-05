@@ -1,4 +1,13 @@
+import type { Transition, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
+
+const variants: Variants = {
+  close: { opacity: 0 },
+  open: { opacity: 1 },
+};
+
+const transition: Transition = { duration: 0.3 };
 
 const NavItem = ({
   children,
@@ -8,14 +17,18 @@ const NavItem = ({
   href: string;
 }) => {
   return (
-    <li className='mb-6 md:mb-8 lg:mb-10 relative cursor-pointer border-2 text-center py-2 px-4 rounded-full hover:bg-white duration-200 group'>
+    <motion.li
+      variants={variants}
+      transition={transition}
+      className='mb-6 md:mb-8 lg:mb-10 group bg-transparent py-2 px-4 rounded-full group hover:bg-white text-center'
+    >
       <Link
         href={href}
-        className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold z-20 relative group-hover:bg-gradient-to-r group-hover:from-wisteria-light group-hover:to-wisteria-dark group-hover:bg-clip-text group-hover:text-transparent duration-200'
+        className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold group-hover:text-wisteria-dark'
       >
         {children}
       </Link>
-    </li>
+    </motion.li>
   );
 };
 export default NavItem;

@@ -5,24 +5,26 @@ import NavItem from './NavItem';
 
 const variants: Variants = {
   close: {
-    top: '120%',
+    y: '100%',
     transition: {
-      duration: 0.3,
-      staggerChildren: 0.3,
+      type: 'tween',
       when: 'afterChildren',
+      staggerChildren: 0.3,
+      duration: 0.3,
     },
   },
-  open: (isOpen) => ({
-    top: isOpen ? 0 : '120%',
+  open: {
+    y: 0,
     transition: {
-      duration: 0.3,
-      staggerChildren: 0.3,
+      type: 'tween',
       when: 'beforeChildren',
+      staggerChildren: 0.3,
+      duration: 0.3,
     },
-  }),
+  },
 };
 
-const Nav = ({ isOpen }: { isOpen: boolean }) => {
+const Nav = () => {
   const items: { id: string; text: string; href: string }[] = [
     {
       id: 'i1',
@@ -45,7 +47,6 @@ const Nav = ({ isOpen }: { isOpen: boolean }) => {
     <motion.nav
       className='fixed bg-gradient-to-br from-wisteria to-wisteria-dark w-screen h-screen z-50'
       variants={variants}
-      custom={isOpen}
       initial='close'
       animate='open'
       exit='close'
