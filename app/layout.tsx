@@ -30,6 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${openSans.variable} ${poiretOne.variable}`}>
+      <head>
+        <link rel='shortcut icon' href='/logo.svg' />
+      </head>
       <body className='bg-primary text-white h-[90vh] md:h-[92.5vh]'>
         <Menu />
         <div className='border-2 border-white m-6 h-full p-4 rounded-sm overflow-hidden relative'>
