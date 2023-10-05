@@ -24,7 +24,7 @@ const NavItem = ({
     >
       <Link
         href={href}
-        className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold group-hover:text-wisteria-dark'
+        className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold group-hover:text-secondary-dark'
       >
         {children}
       </Link>

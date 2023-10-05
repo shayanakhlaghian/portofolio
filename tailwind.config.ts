@@ -13,10 +13,10 @@ const config: Config = {
         poiret: ['var(--font-poiret-one)'],
       },
       colors: {
-        night: '#121212',
-        wisteria: '#A39DD9',
-        'wisteria-dark': '#6C62C2',
-        'wisteria-light': '#BDB8E3',
+        primary: '#121212',
+        secondary: '#A39DD9',
+        'secondary-dark': '#6C62C2',
+        'secondary-light': '#BDB8E3',
       },
       keyframes: {
         rotate: {

@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${openSans.variable} ${poiretOne.variable}`}>
-      <body className='bg-night text-white h-[90vh] md:h-[92.5vh]'>
+      <body className='bg-primary text-white h-[90vh] md:h-[92.5vh]'>
         <Menu />
         <div className='border-2 border-white m-6 h-full p-4 rounded-sm overflow-hidden relative'>
           {children}
