@@ -26,7 +26,7 @@ const NavItem = ({
         className='font-poiret text-2xl md:text-3xl lg:text-4xl font-bold group-hover:text-secondary-dark'
         onClick={onClick}
       >
-        {children}
+        <span className='line-clamp-1'>{children}</span>
       </button>
     </motion.li>
   );
