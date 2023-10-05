@@ -43,7 +43,7 @@ const Nav = ({ isOpen }: { isOpen: boolean }) => {
 
   return (
     <motion.nav
-      className='fixed bg-wisteria w-screen h-screen z-50'
+      className='fixed bg-gradient-to-br from-wisteria to-wisteria-dark w-screen h-screen z-50'
       variants={variants}
       custom={isOpen}
       initial='close'
