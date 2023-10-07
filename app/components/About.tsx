@@ -7,7 +7,7 @@ const About = () => {
       <p className='text-sm md:text-base lg:text-xl'>
         {`“I have been doing web development for over 4 years now, I'm also a
         fluent English speaker who is eager to take challenging programming
-        projects to implement the expertise I've learned through these years.”`}
+        projects to implement the expertise I've learned throughout these years.”`}
       </p>
     </>
   );
