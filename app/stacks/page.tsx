@@ -24,9 +24,9 @@ const Stacks = () => {
         variants={variants}
       >
         Linux, Windows, HTML, CSS, Sass, JavaScript, TypeScript, Solidity,
-        NodeJS, ExpressJS, ReactJS, NextJS, Redux, TailwindCSS, Styled
-        Components, MongoDB, MySQL, NATS, Framer Motion, Figma, Git, GitHub,
-        Docker, Kubernetes
+        NodeJS, ExpressJS, ReactJS, NextJS, Redux, React Query, Socket.io,
+        TailwindCSS, Styled Components, MongoDB, MySQL, NATS, Framer Motion,
+        Figma, Git, GitHub, Docker, Kubernetes
       </motion.p>
     </motion.main>
   );
