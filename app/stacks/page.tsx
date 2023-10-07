@@ -18,7 +18,7 @@ const Stacks = () => {
       <motion.h1
         className='font-poiret font-bold text-2xl md:text-3xl lg:text-4xl'
         variants={variants}
-      >{`Sills and Stack's`}</motion.h1>
+      >{`Skills 'n Stacks`}</motion.h1>
       <motion.p
         className='text-base md:text-xl lg:text-2xl tracking-wide'
         variants={variants}
