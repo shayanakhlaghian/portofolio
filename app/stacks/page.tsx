@@ -10,7 +10,7 @@ const variants: Variants = {
 const Stacks = () => {
   return (
     <motion.main
-      className='w-full md:w-1/2 lg:w-[40%] mx-auto my-16 md:fixed md:right-[7.5%] md:top-[20%] lg:top-[25%] [&>*]:mb-4 h-[60%] md:h-1/2 overflow-scroll text-center'
+      className='w-full md:w-1/2 lg:w-[40%] mx-auto my-16 md:fixed md:right-[7.5%] md:top-[20%] lg:top-[25%] [&>*]:mb-4 h-2/3 md:h-1/2 overflow-scroll text-center'
       variants={variants}
       initial='hide'
       animate='show'
