@@ -9,8 +9,8 @@ const variants: Variants = {
     transition: {
       type: 'tween',
       when: 'afterChildren',
-      staggerChildren: 0.3,
-      duration: 0.3,
+      staggerChildren: 0.45,
+      duration: 0.6,
     },
   },
   open: {
@@ -18,8 +18,8 @@ const variants: Variants = {
     transition: {
       type: 'tween',
       when: 'beforeChildren',
-      staggerChildren: 0.3,
-      duration: 0.3,
+      staggerChildren: 0.45,
+      duration: 0.6,
     },
   },
 };
